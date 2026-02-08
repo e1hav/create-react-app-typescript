@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "extends": ["config:recommended", ":dependencyDashboard"],
+
+  "dependencyDashboardApproval": true,
+
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  },
+
+  "osvVulnerabilityAlerts": true,
+
+  "packageRules": [
+    {
+      "matchVulnerability": true,
+      "labels": ["security"]
+    }
+  ]
+}
